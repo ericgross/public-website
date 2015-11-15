@@ -3,6 +3,9 @@ defaults: &default
 development:
   SECRET_KEY_BASE: 5a5d8e02af4cb116bf9ca581a22b16577ef498f28b1b307e8e277ef8ae7c2b36208d18d83e58f189430fa659eb1fa8300a716b4aeaeadfcc6672118b2961df97
 
+production:
+  APPLICATION_HOST: 'ericgross.com'
+
 staging:
   APPLICATION_HOST: 'ericgross-website-staging.herokuapp.com'
   EMAIL_RECIPIENTS: 'e@ericgross.com'
