@@ -5,3 +5,4 @@ development:
 
 staging:
   APPLICATION_HOST: 'ericgross-website-staging.herokuapp.com'
+  EMAIL_RECIPIENTS: 'e@ericgross.com'
