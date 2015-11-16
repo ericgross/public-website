@@ -9,6 +9,7 @@ article
     span.type
       = link_to(category['name'], blog_category_path(:category_slug => category['slug']))
   p.post-summary
-    - if post['featured_image'] != ""
-      = image_tag(post['featured_image'], :height => 100, :align => "left", :style => "padding: 10px")
-    = post['summary']
+    a[href="#{blog_post_path(:slug => post['slug'])}"]
+      - if post['featured_image'] != ""
+        = image_tag(post['featured_image'], :height => 100, :align => "left", :style => "padding: 10px")
+      = post['summary']
