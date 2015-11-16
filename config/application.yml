@@ -1,11 +1,19 @@
 defaults: &default
+  BUTTER_TOKEN: 8b945a0dd3b62b36c86af3695cc1c314b3d8015f
+development:
 
 development:
+  <<: *default
+
   SECRET_KEY_BASE: 5a5d8e02af4cb116bf9ca581a22b16577ef498f28b1b307e8e277ef8ae7c2b36208d18d83e58f189430fa659eb1fa8300a716b4aeaeadfcc6672118b2961df97
 
 production:
-  APPLICATION_HOST: 'ericgross.com'
+  <<: *default
+
+  APPLICATION_HOST: 'www.ericgross.com'
 
 staging:
+  <<: *default
+
   APPLICATION_HOST: 'ericgross-website-staging.herokuapp.com'
   EMAIL_RECIPIENTS: 'e@ericgross.com'

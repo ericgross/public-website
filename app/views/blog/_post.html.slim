@@ -1,0 +1,20 @@
+/! This is the post partial used to display posts in the list view on the blog home page.
+article.type-system-geometric
+  /! Display the post title in a h2 tag
+  h1.post-title
+    = link_to(post['title'], blog_post_path(:slug => post['slug']))
+  /! Display the post byline (author, categories, publish date)
+  h2.post-meta
+    | Posted by 
+    | #{link_to("#{post['author']['first_name']} #{post['author']['last_name']}", blog_author_path(:author_slug => post['author']['slug']))} 
+    | on #{post['published']}
+    - post['categories'].each do |category|
+      span.label.label-default
+        = link_to(category['name'], blog_category_path(:category_slug => category['slug']))
+  p.post-summary
+    /!
+      | Featured images don't have to be used but can add a nice visual to your posts.
+      | Here's a sample usage where we align it to the left of the summary text but use it however you'd like.
+    - if post['featured_image'] != ""
+      = image_tag(post['featured_image'], :height => 100, :align => "left", :style => "padding: 10px")
+    = post['summary']
