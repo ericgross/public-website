@@ -1,0 +1,25 @@
+- content_for :head do
+  title
+    = @post['seo_title']
+  |   | Eric Gross
+  meta content="#{@post['meta_description']}" name="description" /
+
+.contents
+  .article
+    h1.post-title
+      = @post['title']
+    h2.post-meta
+      | Posted by 
+      | #{link_to("#{@post['author']['first_name']} #{@post['author']['last_name']}", blog_author_path(:author_slug => @post['author']['slug']))} 
+      | on 
+      | #{@post['published']}
+    - @post['categories'].each do |category|
+      span.type
+        = link_to(category['name'], blog_category_path(:category_slug => category['slug']))
+    p.post-body
+      = @post['body'].html_safe
+  ul.pager
+    - if @post['previous_post']
+      li.previous= link_to("&larr; Previous post".html_safe, blog_post_path(:slug => @post['previous_post']['slug']))
+    - if @post['next_post']
+      li.next= link_to("Next post &rarr;".html_safe, blog_post_path(:slug => @post['next_post']['slug']))

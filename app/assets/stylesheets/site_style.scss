@@ -5,11 +5,15 @@
 .contents {
   @include clearfix;
   @include shift(2);
-  @include span-columns(4);
+  @include span-columns(8);
 }
 
 header {
   margin-bottom: 1em;
+}
+
+.article ul {
+  list-style-type: inherit;
 }
 
 .type-system-geometric {
@@ -23,10 +27,6 @@ header {
   $base-font-color: $dark-gray !default;
   $sans-serif: $base-font-family;
   $serif: $heading-font-family;
-
-  @include clearfix;
-  @include shift(2);
-  @include span-columns(4);
 
   font-family: $sans-serif;
   text-align: left;
