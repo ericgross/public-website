@@ -2,7 +2,17 @@
   @include outer-container;
 }
 
-article.type-system-geometric {
+.contents {
+  @include clearfix;
+  @include shift(2);
+  @include span-columns(4);
+}
+
+header {
+  margin-bottom: 1em;
+}
+
+.type-system-geometric {
   $base-border-radius: 3px !default;
   $base-line-height: 1.5em !default;
   $base-spacing: 1.5em !default;
