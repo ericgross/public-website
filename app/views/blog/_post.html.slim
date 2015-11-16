@@ -1,0 +1,14 @@
+article
+  h1.post-title
+    = link_to(post['title'], blog_post_path(:slug => post['slug']))
+  h2.post-meta
+    | Posted by 
+    | #{link_to("#{post['author']['first_name']} #{post['author']['last_name']}", blog_author_path(:author_slug => post['author']['slug']))} 
+    | on #{post['published']}
+  - post['categories'].each do |category|
+    span.type
+      = link_to(category['name'], blog_category_path(:category_slug => category['slug']))
+  p.post-summary
+    - if post['featured_image'] != ""
+      = image_tag(post['featured_image'], :height => 100, :align => "left", :style => "padding: 10px")
+    = post['summary']

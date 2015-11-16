@@ -1,0 +1,13 @@
+header.navigation[role="banner"]
+  .navigation-wrapper
+    = link_to image_tag('eric.jpg'), root_path, class: 'logo'
+    a.navigation-menu-button#js-mobile-menu[href="javascript:void(0)"] MENU
+    nav[role="navigation"]
+      ul#js-navigation-menu.navigation-menu.show
+        li.nav-link
+          = link_to 'History', page_path('history')
+        li.nav-link
+          = link_to 'Blog', '/blog'
+        li.nav-link
+          = link_to 'Powered by Butter', '//buttercms.com', target: '_blank'
+
