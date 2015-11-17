@@ -11,8 +11,10 @@ html
     = javascript_include_tag 'application'
     = csrf_meta_tags
   body class=body_class
+    = render 'top_nav'
+    .left-gutter
+      = yield :left_gutter
     .container.type-system-geometric
-      = render 'top_nav'
       = render 'flashes'
       = yield
       = render 'javascript'
