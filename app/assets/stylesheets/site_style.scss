@@ -16,8 +16,15 @@ header {
   color: inherit !important;
 }
 
-.article ul {
-  list-style-type: inherit;
+article {
+  
+  ul {
+    list-style-type: inherit;
+  }
+
+  .share {
+    margin-bottom: 1em;
+  }
 }
 
 .type-system-geometric {
@@ -64,6 +71,7 @@ header {
     font-size: 0.7em;
     font-weight: 800;
     margin-bottom: 2em;
+    margin-left: 0.5em;
     padding: 0.3em 0;
     text-align: left;
     text-transform: uppercase;

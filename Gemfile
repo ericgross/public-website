@@ -62,3 +62,4 @@ group :staging, :production do
 end
 
 gem 'buttercms'
+gem 'font-awesome-rails'
