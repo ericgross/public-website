@@ -5,7 +5,7 @@
   meta content="#{@post['meta_description']}" name="description" /
 
 .contents
-  .article
+  article
     h1.post-title
       = @post['title']
     h2.post-meta
@@ -18,8 +18,15 @@
         = link_to(category['name'], blog_category_path(:category_slug => category['slug']))
     p.post-body
       = @post['body'].html_safe
+    .share
   ul.pager
     - if @post['previous_post']
       li.previous= link_to("&larr; Previous post".html_safe, blog_post_path(:slug => @post['previous_post']['slug']))
     - if @post['next_post']
       li.next= link_to("Next post &rarr;".html_safe, blog_post_path(:slug => @post['next_post']['slug']))
+
+javascript:
+  $('.share').jsSocials({
+    shares: ['twitter', 'facebook', 'linkedin', 'email']
+  });
+

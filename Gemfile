@@ -5,6 +5,7 @@ ruby '2.2.3'
 gem 'airbrake'
 gem 'autoprefixer-rails'
 gem 'bourbon', '~> 4.2.0'
+gem 'bower-rails'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'delayed_job_active_record'
 gem 'email_validator'
@@ -61,3 +62,4 @@ group :staging, :production do
 end
 
 gem 'buttercms'
+gem 'font-awesome-rails'
