@@ -1,0 +1,39 @@
+.contents
+  h1 Work
+
+  h2 Chief Technical Officer, Justly
+  h3 A market solution to inefficient legal spend
+  p
+    span I do all the technology at Justly - it's just me and a bunch of lawyers so far.
+  h4 What is Justly?
+  p
+    span Justly brings today's data analytics to bear by analyzing yesterday's litigations and billing data to provide insights into the future. We believe that the predictive capabilities of data science allows us to create a platform for legal technicians and clients to effeciently manage legal spend.
+    span We have created, and are refining, a web application that vizualizes litigations from the past and allows for management of new and existing matters.
+  h5 The stack
+  p
+    span At the highest level, there are two primary things we are doing: gathering data and providing an online experience for our users.
+    ul
+      li Data Gathering - asyncronous queueing (Sidekiq) of ingestion processors which handle the various sources of our data
+      li Front End - customers can create and manage matters as well as vizualize our data using our interactive web interface
+  h4 How are we executing?
+  ul
+    li
+      | Services
+      ul
+        li RDS Postgres - persistant storage
+        li Redis - caching, queueing
+        li Heroku - hosting
+    li
+      | Software
+      ul
+        li
+          | Ruby
+          ul
+            li Rails
+            li Grape
+        li
+          | JavaScript
+          ul
+            li CoffeeScript
+            li d3
+            li Crossfilter
