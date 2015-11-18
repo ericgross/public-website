@@ -10,7 +10,7 @@ development:
 production:
   <<: *default
 
-  APPLICATION_HOST: 'www.ericgross.com'
+  APPLICATION_HOST: 'ericgross.com'
 
 staging:
   <<: *default
