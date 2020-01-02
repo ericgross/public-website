@@ -1,0 +1,1170 @@
+[
+    {
+        "title": "Quality",
+        "content": "<h1>Quality in software<\/h1>\n<p>Each expression and statement is expressed in code on a spectrum of quality. The overall quality of a system is some aggregation of the individual components and how they are organized.<\/p>\n<p>It takes time to build quality software and it should only be attempted when there is confidence that the software should be used well into the future.<\/p>\n<h1>What is it?<\/h1>\n<p>Software that meets business demands today can be incapable of being changed over time to respond to future changes. Quality software meets future business needs - and it builds on software that meet&rsquo;s today&rsquo;s needs as a starting point.<\/p>\n<p>You can change quality software - it is not brittle. Changing something in one area of the code doesn&rsquo;t impact distant functionality.<\/p>\n<h1>How much quality should I want?<\/h1>\n<p>If the work is short-lived and not part of the future business, use the least quality possible. Work that may become important is trickier - it is easy to entrench low-quality work causing optional maintenance burdens. In order to focus on things that matter, we can care the most about things at the top of the stack, relying on tools to enforce standards most completely at the bottom and to a lesser extent further up the stack.<\/p>\n<p>Consistency is important within teams - solving a set of problems with the same solution allows everyone to use the preferred tools expertly.<\/p>\n<h1>How do I measure quality?<\/h1>\n<ul>\n<li>How much time does the team spend on features vs. bugs<\/li>\n<li>How frequently are bugs detected by end-users<\/li>\n<li>How much of the functionality is covered by tests that are run before releases<\/li>\n<li>Is the application acting surprisingly?<\/li>\n<\/ul>\n<h1>How do I tune quality?<\/h1>\n<h2>The minimum<\/h2>\n<p>Prototype the application with available tools so that you can expend the minimum effort to get the job done. If you are forced to write code, do the absolute minimum.<\/p>\n<h2>Medium<\/h2>\n<p>Iterate on the application by adding the functionality to the application and than by writing tests. This &ldquo;should work&rdquo; for the most part, and it is faster for most people than creating higher quality software.<\/p>\n<h2>High<\/h2>\n<p>Iterate very tightly by defining small chunks of work and then writing the smallest test that you can to fail. Continue by making that test pass by adding the application code as required. Next refactor the code and start the PR process.<\/p>",
+        "references": [
+            {
+                "_id": "5e0b7bb562356200210001ce",
+                "link": "Concepts",
+                "display": "Write software for other people and future people to understand"
+            },
+            {
+                "_id": "5e0d636e623562001d000104",
+                "link": "Concepts",
+                "display": "Tight loops of refactoring"
+            },
+            {
+                "_id": "5e0d646962356200370001c7",
+                "link": "Concepts",
+                "display": "Domain driven design"
+            },
+            {
+                "_id": "5e0d648b6235620017000084",
+                "link": "Concepts",
+                "display": "Best practices, coding guidelines, PR practices"
+            },
+            {
+                "_id": "5e0d6555623562003a00020e",
+                "link": "Concepts",
+                "display": "Data migrations"
+            },
+            {
+                "_id": "5e0d65f6623562001d0000ae",
+                "link": "Concepts",
+                "display": "SRP"
+            },
+            {
+                "_id": "5e0d6611623562003d00033e",
+                "link": "Concepts",
+                "display": "Tests before code, only make it pass, refactor, repeat "
+            },
+            {
+                "_id": "5e0d66bc6235620037000016",
+                "link": "Concepts",
+                "display": "Cross platform testing with orbs "
+            },
+            {
+                "_id": "5e0d676d623562003d0001ba",
+                "link": "Concepts",
+                "display": "Fit quality to the goal"
+            },
+            {
+                "_id": "5e0d678d623562001e0002fd",
+                "link": "Concepts",
+                "display": "Use the tools you want in the result, not the first iteration"
+            },
+            {
+                "_id": "5e0d69db623562003c000378",
+                "link": "Concepts",
+                "display": "What do you test?"
+            },
+            {
+                "_id": "5e0d6a11623562003f000344",
+                "link": "Concepts",
+                "display": "How does software change over time?"
+            },
+            {
+                "_id": "5e0d6ae0623562003e000098",
+                "link": "Concepts",
+                "display": "Nil"
+            },
+            {
+                "_id": "5e0d6b0862356200480002b0",
+                "link": "Concepts",
+                "display": "Sandi "
+            },
+            {
+                "_id": "5e0e16a262356200130000ec",
+                "link": "Concepts",
+                "display": "Version control "
+            },
+            {
+                "_id": "5e0e171d62356200490000c5",
+                "link": "Concepts",
+                "display": "Use time boxes "
+            },
+            {
+                "_id": "5e0e179362356200490002ee",
+                "link": "Concepts",
+                "display": "Meaning of tech debt"
+            },
+            {
+                "_id": "5e0e1827623562004c00021c",
+                "link": "Concepts",
+                "display": "lint rules"
+            },
+            {
+                "_id": "5e0e187262356200480000a7",
+                "link": "Concepts",
+                "display": "Testing in production "
+            },
+            {
+                "_id": "5e0e1885623562004c00011c",
+                "link": "Concepts",
+                "display": "Percy "
+            }
+        ],
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982107,
+        "_created": 1577810730,
+        "_id": "5e0b7b2a62356200190000dd"
+    },
+    {
+        "title": "Write software for other people and future people to understand",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577810869,
+        "_created": 1577810869,
+        "_id": "5e0b7bb562356200210001ce"
+    },
+    {
+        "title": "Tight loops of refactoring",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577935726,
+        "_created": 1577935726,
+        "_id": "5e0d636e623562001d000104"
+    },
+    {
+        "title": "Create a software product",
+        "content": "",
+        "references": [
+            {
+                "_id": "5e0d6412623562001c0000fe",
+                "link": "Concepts",
+                "display": "Translate of business requirements and acceptance criteria into reality"
+            },
+            {
+                "_id": "5e0d64b7623562001100012c",
+                "link": "Concepts",
+                "display": "Iterations, stories, epics"
+            },
+            {
+                "_id": "5e0d64fd62356200130000b0",
+                "link": "Concepts",
+                "display": "Monitoring, structured logging, events, metrics"
+            },
+            {
+                "_id": "5e0d651a62356200130001c4",
+                "link": "Concepts",
+                "display": "Ideation, selection, prioritization of features"
+            },
+            {
+                "_id": "5e0d6538623562003a000355",
+                "link": "Concepts",
+                "display": "CI\/deployment strategy \/ review apps"
+            },
+            {
+                "_id": "5e0d6590623562001d00001c",
+                "link": "Concepts",
+                "display": "Create a web product"
+            },
+            {
+                "_id": "5e0d65c26235620037000109",
+                "link": "Concepts",
+                "display": "Data pipelines \/ data lake"
+            },
+            {
+                "_id": "5e0d6639623562001d0002be",
+                "link": "Concepts",
+                "display": "Case studies"
+            },
+            {
+                "_id": "5e0d674f623562003f0002b2",
+                "link": "Concepts",
+                "display": "Do the minimum "
+            },
+            {
+                "_id": "5e0d6a9f623562004a0001ed",
+                "link": "Concepts",
+                "display": "On call "
+            },
+            {
+                "_id": "5e0d6abc623562003c000298",
+                "link": "Concepts",
+                "display": "Exceptions "
+            },
+            {
+                "_id": "5e0d6b82623562003f0002e5",
+                "link": "Concepts",
+                "display": "Setting expectations like a doctor "
+            },
+            {
+                "_id": "5e0d6bb9623562003d0002d2",
+                "link": "Concepts",
+                "display": "Pairing "
+            },
+            {
+                "_id": "5e0e1736623562004c000299",
+                "link": "Concepts",
+                "display": "Do the thing manually before automating it"
+            },
+            {
+                "_id": "5e0e17c4623562004f00009f",
+                "link": "Concepts",
+                "display": "Multi-tenancy, RBAC"
+            },
+            {
+                "_id": "5e0e17f2623562004d000172",
+                "link": "Concepts",
+                "display": "when do you rewrite?"
+            },
+            {
+                "_id": "5e0e1807623562004c0001e8",
+                "link": "Concepts",
+                "display": "smaller increments are best"
+            },
+            {
+                "_id": "5e0e183f623562003d000287",
+                "link": "Concepts",
+                "display": "When do you start to extract services?"
+            },
+            {
+                "_id": "5e0e18bb623562004b0002ee",
+                "link": "Concepts",
+                "display": "Subscriptions"
+            },
+            {
+                "_id": "5e0e18d4623562004b000274",
+                "link": "Concepts",
+                "display": "How do you choose a language \/ gem?"
+            },
+            {
+                "_id": "5e0e19c3623562001e000381",
+                "link": "Concepts",
+                "display": "Background jobs"
+            }
+        ],
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982420,
+        "_created": 1577935870,
+        "_id": "5e0d63ff623562001300027b"
+    },
+    {
+        "title": "Translate of business requirements and acceptance criteria into reality",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577935913,
+        "_created": 1577935890,
+        "_id": "5e0d6412623562001c0000fe"
+    },
+    {
+        "title": "Grow a tech org",
+        "content": "<p><span data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Grow a team from me&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}\">Grow a team from me<\/span><\/p>",
+        "references": [
+            {
+                "_id": "5e0d6720623562003b0001bc",
+                "link": "Concepts",
+                "display": "How to make a startup "
+            },
+            {
+                "_id": "5e0d67a7623562003c000197",
+                "link": "Concepts",
+                "display": "Work life balance "
+            },
+            {
+                "_id": "5e0d67d4623562003a00028f",
+                "link": "Concepts",
+                "display": "Equity vs cash"
+            },
+            {
+                "_id": "5e0d6a4c623562003c000318",
+                "link": "Concepts",
+                "display": "Defining a ladder"
+            },
+            {
+                "_id": "5e0d6a66623562003e0001e1",
+                "link": "Concepts",
+                "display": "Hire for knowledge or potential?"
+            },
+            {
+                "_id": "5e0d6b2c623562003f000287",
+                "link": "Concepts",
+                "display": "Want to be wrong "
+            },
+            {
+                "_id": "5e0d6b4862356200130003b6",
+                "link": "Concepts",
+                "display": "Want to change "
+            },
+            {
+                "_id": "5e0d6b65623562003e0001be",
+                "link": "Concepts",
+                "display": "Priming "
+            },
+            {
+                "_id": "5e0e1706623562001300039c",
+                "link": "Concepts",
+                "display": "Finding and using allies and convincing enemies "
+            },
+            {
+                "_id": "5e0e174c623562003f000199",
+                "link": "Concepts",
+                "display": "Write it down or it won't last"
+            },
+            {
+                "_id": "5e0e17ae6235620013000187",
+                "link": "Concepts",
+                "display": "Long-term planning - the biz works out what they want and head count + expected velocity "
+            },
+            {
+                "_id": "5e0e18eb623562003d0000cb",
+                "link": "Concepts",
+                "display": "How do you make decisions?"
+            },
+            {
+                "_id": "5e0e19df623562004e00012b",
+                "link": "Concepts",
+                "display": "agility"
+            },
+            {
+                "_id": "5e0e1a02623562004e0002e1",
+                "link": "Concepts",
+                "display": "There is no try harder "
+            },
+            {
+                "_id": "5e0e1a196235620048000089",
+                "link": "Concepts",
+                "display": "We are doctors"
+            }
+        ],
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982504,
+        "_created": 1577935945,
+        "_id": "5e0d644962356200380001ee"
+    },
+    {
+        "title": "IT\/OT",
+        "content": "",
+        "references": [
+            {
+                "_id": "5e0d64d8623562001700023f",
+                "link": "Concepts",
+                "display": "Guardrails"
+            },
+            {
+                "_id": "5e0d65dc623562003d00014a",
+                "link": "Concepts",
+                "display": "Stations\/roles \/events \/transitions \/rogue\/next happy path"
+            },
+            {
+                "_id": "5e0d66796235620017000357",
+                "link": "Concepts",
+                "display": "PLC interactions"
+            },
+            {
+                "_id": "5e0d66e4623562003c0003c1",
+                "link": "Concepts",
+                "display": "Work with stakeholders on intricate physical and logical challenges to generate the ideal direction for progress "
+            }
+        ],
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936626,
+        "_created": 1577935964,
+        "_id": "5e0d645c62356200170002bd"
+    },
+    {
+        "title": "Domain driven design",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577935977,
+        "_created": 1577935977,
+        "_id": "5e0d646962356200370001c7"
+    },
+    {
+        "title": "Best practices, coding guidelines, PR practices",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936011,
+        "_created": 1577936011,
+        "_id": "5e0d648b6235620017000084"
+    },
+    {
+        "title": "Iterations, stories, epics",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936055,
+        "_created": 1577936055,
+        "_id": "5e0d64b7623562001100012c"
+    },
+    {
+        "title": "Guardrails",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936088,
+        "_created": 1577936088,
+        "_id": "5e0d64d8623562001700023f"
+    },
+    {
+        "title": "Monitoring, structured logging, events, metrics",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936125,
+        "_created": 1577936125,
+        "_id": "5e0d64fd62356200130000b0"
+    },
+    {
+        "title": "Ideation, selection, prioritization of features",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936154,
+        "_created": 1577936154,
+        "_id": "5e0d651a62356200130001c4"
+    },
+    {
+        "title": "CI\/deployment strategy \/ review apps",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936184,
+        "_created": 1577936184,
+        "_id": "5e0d6538623562003a000355"
+    },
+    {
+        "title": "Data migrations",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936213,
+        "_created": 1577936213,
+        "_id": "5e0d6555623562003a00020e"
+    },
+    {
+        "title": "Create a web product",
+        "content": "",
+        "references": [
+            {
+                "_id": "5e0d65a6623562001e0002a5",
+                "link": "Concepts",
+                "display": "Solidus, cms, segment"
+            },
+            {
+                "_id": "5e0e17de623562001e000253",
+                "link": "Concepts",
+                "display": "heroku"
+            },
+            {
+                "_id": "5e0e185f6235620048000183",
+                "link": "Concepts",
+                "display": "Load testing "
+            },
+            {
+                "_id": "5e0e18a5623562003f000366",
+                "link": "Concepts",
+                "display": "Static sites"
+            },
+            {
+                "_id": "5e0e1901623562003f00003b",
+                "link": "Concepts",
+                "display": "Admin interface "
+            }
+        ],
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982221,
+        "_created": 1577936272,
+        "_id": "5e0d6590623562001d00001c"
+    },
+    {
+        "title": "Solidus, cms, segment",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936294,
+        "_created": 1577936294,
+        "_id": "5e0d65a6623562001e0002a5"
+    },
+    {
+        "title": "Data pipelines \/ data lake",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936322,
+        "_created": 1577936322,
+        "_id": "5e0d65c26235620037000109"
+    },
+    {
+        "title": "Stations\/roles \/events \/transitions \/rogue\/next happy path",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936348,
+        "_created": 1577936348,
+        "_id": "5e0d65dc623562003d00014a"
+    },
+    {
+        "title": "SRP",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936374,
+        "_created": 1577936374,
+        "_id": "5e0d65f6623562001d0000ae"
+    },
+    {
+        "title": "Tests before code, only make it pass, refactor, repeat ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936401,
+        "_created": 1577936401,
+        "_id": "5e0d6611623562003d00033e"
+    },
+    {
+        "title": "Case studies",
+        "content": "",
+        "references": [
+            {
+                "_id": "5e0d6658623562001e0003dc",
+                "link": "Concepts",
+                "display": "Afternic, gridapp, careof "
+            },
+            {
+                "_id": "5e0d6a2e62356200130000d5",
+                "link": "Concepts",
+                "display": "IC vs management "
+            },
+            {
+                "_id": "5e0e16d3623562003e0002dc",
+                "link": "Concepts",
+                "display": "Finding a gig"
+            }
+        ],
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577981687,
+        "_created": 1577936441,
+        "_id": "5e0d6639623562001d0002be"
+    },
+    {
+        "title": "Afternic, gridapp, careof ",
+        "content": "",
+        "references": [
+            {
+                "_id": "5e0d6698623562003c0002f5",
+                "link": "Concepts",
+                "display": "Physical pi test suite with physical plc mock"
+            },
+            {
+                "_id": "5e0d66fe6235620013000391",
+                "link": "Concepts",
+                "display": "Database stuff"
+            },
+            {
+                "_id": "5e0d6a83623562003e000303",
+                "link": "Concepts",
+                "display": "Triplebyte "
+            }
+        ],
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937555,
+        "_created": 1577936472,
+        "_id": "5e0d6658623562001e0003dc"
+    },
+    {
+        "title": "PLC interactions",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936505,
+        "_created": 1577936505,
+        "_id": "5e0d66796235620017000357"
+    },
+    {
+        "title": "Physical pi test suite with physical plc mock",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936536,
+        "_created": 1577936536,
+        "_id": "5e0d6698623562003c0002f5"
+    },
+    {
+        "title": "Cross platform testing with orbs ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936572,
+        "_created": 1577936572,
+        "_id": "5e0d66bc6235620037000016"
+    },
+    {
+        "title": "Work with stakeholders on intricate physical and logical challenges to generate the ideal direction for progress ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936612,
+        "_created": 1577936612,
+        "_id": "5e0d66e4623562003c0003c1"
+    },
+    {
+        "title": "Database stuff",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936638,
+        "_created": 1577936638,
+        "_id": "5e0d66fe6235620013000391"
+    },
+    {
+        "title": "How to make a startup ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936672,
+        "_created": 1577936672,
+        "_id": "5e0d6720623562003b0001bc"
+    },
+    {
+        "title": "Do the minimum ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936719,
+        "_created": 1577936719,
+        "_id": "5e0d674f623562003f0002b2"
+    },
+    {
+        "title": "Fit quality to the goal",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936749,
+        "_created": 1577936749,
+        "_id": "5e0d676d623562003d0001ba"
+    },
+    {
+        "title": "Use the tools you want in the result, not the first iteration",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936781,
+        "_created": 1577936781,
+        "_id": "5e0d678d623562001e0002fd"
+    },
+    {
+        "title": "Work life balance ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936807,
+        "_created": 1577936807,
+        "_id": "5e0d67a7623562003c000197"
+    },
+    {
+        "title": "Equity vs cash",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577936852,
+        "_created": 1577936852,
+        "_id": "5e0d67d4623562003a00028f"
+    },
+    {
+        "title": "What do you test?",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937371,
+        "_created": 1577937371,
+        "_id": "5e0d69db623562003c000378"
+    },
+    {
+        "title": "How does software change over time?",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937425,
+        "_created": 1577937425,
+        "_id": "5e0d6a11623562003f000344"
+    },
+    {
+        "title": "IC vs management ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937454,
+        "_created": 1577937454,
+        "_id": "5e0d6a2e62356200130000d5"
+    },
+    {
+        "title": "Defining a ladder",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937484,
+        "_created": 1577937484,
+        "_id": "5e0d6a4c623562003c000318"
+    },
+    {
+        "title": "Hire for knowledge or potential?",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937510,
+        "_created": 1577937510,
+        "_id": "5e0d6a66623562003e0001e1"
+    },
+    {
+        "title": "Triplebyte ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937539,
+        "_created": 1577937539,
+        "_id": "5e0d6a83623562003e000303"
+    },
+    {
+        "title": "On call ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937567,
+        "_created": 1577937567,
+        "_id": "5e0d6a9f623562004a0001ed"
+    },
+    {
+        "title": "Exceptions ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937596,
+        "_created": 1577937596,
+        "_id": "5e0d6abc623562003c000298"
+    },
+    {
+        "title": "Nil",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937632,
+        "_created": 1577937632,
+        "_id": "5e0d6ae0623562003e000098"
+    },
+    {
+        "title": "Sandi ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937672,
+        "_created": 1577937672,
+        "_id": "5e0d6b0862356200480002b0"
+    },
+    {
+        "title": "Want to be wrong ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937708,
+        "_created": 1577937708,
+        "_id": "5e0d6b2c623562003f000287"
+    },
+    {
+        "title": "Want to change ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937736,
+        "_created": 1577937736,
+        "_id": "5e0d6b4862356200130003b6"
+    },
+    {
+        "title": "Priming ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937765,
+        "_created": 1577937765,
+        "_id": "5e0d6b65623562003e0001be"
+    },
+    {
+        "title": "Setting expectations like a doctor ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937794,
+        "_created": 1577937794,
+        "_id": "5e0d6b82623562003f0002e5"
+    },
+    {
+        "title": "Pairing ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577937849,
+        "_created": 1577937849,
+        "_id": "5e0d6bb9623562003d0002d2"
+    },
+    {
+        "title": "Version control ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577981602,
+        "_created": 1577981602,
+        "_id": "5e0e16a262356200130000ec"
+    },
+    {
+        "title": "Finding a gig",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577981651,
+        "_created": 1577981651,
+        "_id": "5e0e16d3623562003e0002dc"
+    },
+    {
+        "title": "Finding and using allies and convincing enemies ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577981702,
+        "_created": 1577981702,
+        "_id": "5e0e1706623562001300039c"
+    },
+    {
+        "title": "Use time boxes ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577981725,
+        "_created": 1577981725,
+        "_id": "5e0e171d62356200490000c5"
+    },
+    {
+        "title": "Do the thing manually before automating it",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577981750,
+        "_created": 1577981750,
+        "_id": "5e0e1736623562004c000299"
+    },
+    {
+        "title": "Write it down or it won't last",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577981772,
+        "_created": 1577981772,
+        "_id": "5e0e174c623562003f000199"
+    },
+    {
+        "title": "Meaning of tech debt",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577981843,
+        "_created": 1577981843,
+        "_id": "5e0e179362356200490002ee"
+    },
+    {
+        "title": "Long-term planning - the biz works out what they want and head count + expected velocity ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577981870,
+        "_created": 1577981870,
+        "_id": "5e0e17ae6235620013000187"
+    },
+    {
+        "title": "Multi-tenancy, RBAC",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577981892,
+        "_created": 1577981892,
+        "_id": "5e0e17c4623562004f00009f"
+    },
+    {
+        "title": "heroku",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577981918,
+        "_created": 1577981918,
+        "_id": "5e0e17de623562001e000253"
+    },
+    {
+        "title": "when do you rewrite?",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577981938,
+        "_created": 1577981938,
+        "_id": "5e0e17f2623562004d000172"
+    },
+    {
+        "title": "smaller increments are best",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577981959,
+        "_created": 1577981959,
+        "_id": "5e0e1807623562004c0001e8"
+    },
+    {
+        "title": "lint rules",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577981991,
+        "_created": 1577981991,
+        "_id": "5e0e1827623562004c00021c"
+    },
+    {
+        "title": "When do you start to extract services?",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982015,
+        "_created": 1577982015,
+        "_id": "5e0e183f623562003d000287"
+    },
+    {
+        "title": "Load testing ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982047,
+        "_created": 1577982047,
+        "_id": "5e0e185f6235620048000183"
+    },
+    {
+        "title": "Testing in production ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982066,
+        "_created": 1577982066,
+        "_id": "5e0e187262356200480000a7"
+    },
+    {
+        "title": "Percy ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982085,
+        "_created": 1577982085,
+        "_id": "5e0e1885623562004c00011c"
+    },
+    {
+        "title": "Static sites",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982117,
+        "_created": 1577982117,
+        "_id": "5e0e18a5623562003f000366"
+    },
+    {
+        "title": "Subscriptions",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982139,
+        "_created": 1577982139,
+        "_id": "5e0e18bb623562004b0002ee"
+    },
+    {
+        "title": "How do you choose a language \/ gem?",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982164,
+        "_created": 1577982164,
+        "_id": "5e0e18d4623562004b000274"
+    },
+    {
+        "title": "How do you make decisions?",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982187,
+        "_created": 1577982187,
+        "_id": "5e0e18eb623562003d0000cb"
+    },
+    {
+        "title": "Admin interface ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982209,
+        "_created": 1577982209,
+        "_id": "5e0e1901623562003f00003b"
+    },
+    {
+        "title": "To Do",
+        "content": "",
+        "references": [
+            {
+                "_id": "5e0e195e623562003d00033e",
+                "link": "Concepts",
+                "display": "Take questions "
+            },
+            {
+                "_id": "5e0e199b623562004b0003de",
+                "link": "Concepts",
+                "display": "Add comments "
+            },
+            {
+                "_id": "5e0e19af623562004d0003a1",
+                "link": "Concepts",
+                "display": "Startup owner manual for software "
+            }
+        ],
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982394,
+        "_created": 1577982297,
+        "_id": "5e0e1959623562001e00020b"
+    },
+    {
+        "title": "Take questions ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982302,
+        "_created": 1577982302,
+        "_id": "5e0e195e623562003d00033e"
+    },
+    {
+        "title": "Add comments ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982363,
+        "_created": 1577982363,
+        "_id": "5e0e199b623562004b0003de"
+    },
+    {
+        "title": "Startup owner manual for software ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982383,
+        "_created": 1577982383,
+        "_id": "5e0e19af623562004d0003a1"
+    },
+    {
+        "title": "Background jobs",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982403,
+        "_created": 1577982403,
+        "_id": "5e0e19c3623562001e000381"
+    },
+    {
+        "title": "agility",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982431,
+        "_created": 1577982431,
+        "_id": "5e0e19df623562004e00012b"
+    },
+    {
+        "title": "There is no try harder ",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982466,
+        "_created": 1577982466,
+        "_id": "5e0e1a02623562004e0002e1"
+    },
+    {
+        "title": "We are doctors",
+        "content": "",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1577982489,
+        "_created": 1577982489,
+        "_id": "5e0e1a196235620048000089"
+    }
+]
