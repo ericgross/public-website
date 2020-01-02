@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :concepts, only: [:index]
+  resources :concepts, only: %i[index show]
 end

@@ -3,10 +3,12 @@
 require 'rails_helper'
 
 describe 'Concepts' do
-  it 'shows a list of concepts' do
+  it 'allows navigation of concepts' do
     visit root_path
     click_link 'Concepts'
     expect(page).to have_css('.concept', text: 'Quality')
     expect(page.all('.concept').count).to be > 50
+    click_link 'Quality'
+    expect(page).to have_css('.title', text: 'Quality')
   end
 end

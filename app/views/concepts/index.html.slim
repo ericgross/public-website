@@ -1,3 +1,4 @@
 h1 Concepts
 - concepts.each do |concept|
-  .concept = concept.title
+  .concept
+     = link_to concept.title, concept_path(concept.id)
