@@ -12,5 +12,14 @@ describe 'Concepts' do
     expect(page).to have_css('.title', text: 'Quality')
     expect(page).to have_css('.content')
     expect(page).to have_css('.references')
+    within('.references') do
+      click_link('Domain driven design')
+    end
+    expect(page).to have_css('.title', text: 'Domain driven design')
+    expect(page).to have_css('.referenced-by')
+    within('.referenced-by') do
+      click_link('Quality')
+    end
+    expect(page).to have_css('.concept', text: 'Quality')
   end
 end

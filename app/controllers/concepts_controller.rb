@@ -4,11 +4,13 @@ class ConceptsController < ApplicationController
   def show; end
 
   delegate :content, to: :concept
+  delegate :referenced_by, to: :concept
   delegate :references, to: :concept
   delegate :title, to: :concept
 
   helper_method :concepts
   helper_method :content
+  helper_method :referenced_by
   helper_method :references
   helper_method :title
 

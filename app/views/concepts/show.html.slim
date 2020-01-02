@@ -5,3 +5,7 @@
     - references.each do |reference|
       .reference
         = link_to reference.title, concept_path(reference.id)
+  .referenced-by
+    - referenced_by.each do |referred_by|
+      .referred-by
+        = link_to referred_by.title, concept_path(referred_by.id)
