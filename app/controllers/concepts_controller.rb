@@ -3,10 +3,14 @@ class ConceptsController < ApplicationController
 
   def show; end
 
+  delegate :content, to: :concept
+  delegate :references, to: :concept
   delegate :title, to: :concept
 
-  helper_method :title
   helper_method :concepts
+  helper_method :content
+  helper_method :references
+  helper_method :title
 
   private
 
@@ -15,15 +19,6 @@ class ConceptsController < ApplicationController
   end
 
   def concepts
-    stored_collections.map do |c|
-      OpenStruct.new(
-        title: c.fetch('title'),
-        id: c.fetch('_id')
-      )
-    end
-  end
-
-  def stored_collections
-    JSON.parse(File.read('lib/cms_collections.json'))
+    Concepts.new.result
   end
 end

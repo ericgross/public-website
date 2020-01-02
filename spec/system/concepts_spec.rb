@@ -10,5 +10,7 @@ describe 'Concepts' do
     expect(page.all('.concept').count).to be > 50
     click_link 'Quality'
     expect(page).to have_css('.title', text: 'Quality')
+    expect(page).to have_css('.content')
+    expect(page).to have_css('.references')
   end
 end

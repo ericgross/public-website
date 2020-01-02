@@ -1,2 +1,7 @@
 .concept
   .title = title
+  .content == content
+  .references
+    - references.each do |reference|
+      .reference
+        = link_to reference.title, concept_path(reference.id)
