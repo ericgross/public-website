@@ -1,11 +1,17 @@
 .concept
-  .title = title
-  .content == content
-  .references
-    - references.each do |reference|
-      .reference
-        = link_to reference.title, concept_path(reference.id)
-  .referenced-by
-    - referenced_by.each do |referred_by|
-      .referred-by
-        = link_to referred_by.title, concept_path(referred_by.id)
+  h1.title = title
+  .body == content
+  - unless references.empty?
+    .references
+      h2.description Refers to:
+      ul
+        - references.each do |reference|
+          .reference
+            li = link_to reference.title, concept_path(reference.id)
+  - unless referenced_by.empty?
+    .referenced-by
+      h2.description Referenced by:
+      ul
+        - referenced_by.each do |referred_by|
+          .reference
+            li = link_to referred_by.title, concept_path(referred_by.id)
