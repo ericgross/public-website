@@ -11,20 +11,22 @@ describe 'Concepts' do
     end
 
     expect(page).to have_css('.concept', text: 'Quality')
-    expect(page.all('.concept').count).to eq(5)
+    expect(page.all('.concept').count).to eq(2)
 
-    click_link 'Quality'
-    expect(page).to have_css('.title', text: 'Quality')
+    within('.sidebar') do
+      click_link 'Grow a tech org'
+    end
+    expect(page).to have_css('.title', text: 'Grow a tech org')
     expect(page).to have_css('.content')
 
     within('.references') do
-      click_link('Domain driven design')
+      click_link('We are doctors')
     end
-    expect(page).to have_css('.title', text: 'Domain driven design')
+    expect(page).to have_css('.title', text: 'We are doctors')
 
     within('.referenced-by') do
-      click_link('Quality')
+      click_link('Grow a tech org')
     end
-    expect(page).to have_css('.concept', text: 'Quality')
+    expect(page).to have_css('.concept', text: 'Grow a tech org')
   end
 end

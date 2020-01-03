@@ -1,17 +1,19 @@
 class Concepts
   def result
-    data_with_content.map do |c|
-      OpenStruct.new(
-        content: c.content,
-        id: c.id,
-        title: c.title,
-        references: references(c),
-        referenced_by: referenced_by(c)
-      )
-    end
+    data_with_content.map(&method(:object_from_data))
   end
 
   private
+
+  def object_from_data(concept)
+    OpenStruct.new(
+      content: concept.content,
+      id: concept.id,
+      title: concept.title,
+      references: references(concept),
+      referenced_by: referenced_by(concept)
+    )
+  end
 
   def referenced_by(concept)
     concepts_with_references.select { |cr| cr.references.map { |c| c.fetch('_id') }.include?(concept.id) }
@@ -28,11 +30,14 @@ class Concepts
   def references(concept)
     return [] if concept.references.empty?
 
-    concept.references.select { |c| data_with_content.map(&:id).include?(c.fetch('_id')) }.map do |reference|
-      OpenStruct.new(
-        id: reference.fetch('_id'),
-        title: reference.fetch('display')
-      )
-    end
+    existing_references = concept.references.select { |c| data_with_content.map(&:id).include?(c.fetch('_id')) }
+    existing_references.map(&method(:object_from_reference))
+  end
+
+  def object_from_reference(reference)
+    OpenStruct.new(
+      id: reference.fetch('_id'),
+      title: reference.fetch('display')
+    )
   end
 end
