@@ -112,11 +112,17 @@
     },
     {
         "title": "Write software for other people and future people to understand",
-        "content": "",
-        "references": "",
+        "content": "<p>Telling computers what to do is relatively straightforward compared to explaining to others what the purpose of each element of a program is. It is easy to wrongly-interpert what a piece of code is doing and why it exists because the role code plays is opaque. It is possible to expose more about the role that one part plays, but it can onerous without structured logging or another solution.<\/p>",
+        "references": [
+            {
+                "_id": "5e0fb740623562004b000346",
+                "link": "Concepts",
+                "display": "structured logging"
+            }
+        ],
         "_mby": "5e0b76e5623562001900011b",
         "_by": "5e0b76e5623562001900011b",
-        "_modified": 1577810869,
+        "_modified": 1578088358,
         "_created": 1577810869,
         "_id": "5e0b7bb562356200210001ce"
     },
@@ -147,7 +153,7 @@
             {
                 "_id": "5e0d64fd62356200130000b0",
                 "link": "Concepts",
-                "display": "Monitoring, structured logging, events, metrics"
+                "display": "Monitoring, events, metrics"
             },
             {
                 "_id": "5e0d651a62356200130001c4",
@@ -238,11 +244,16 @@
                 "_id": "5e0e19c3623562001e000381",
                 "link": "Concepts",
                 "display": "Background jobs"
+            },
+            {
+                "_id": "5e0fb740623562004b000346",
+                "link": "Concepts",
+                "display": "structured logging"
             }
         ],
         "_mby": "5e0b76e5623562001900011b",
         "_by": "5e0b76e5623562001900011b",
-        "_modified": 1577982420,
+        "_modified": 1578088282,
         "_created": 1577935870,
         "_id": "5e0d63ff623562001300027b"
     },
@@ -414,12 +425,12 @@
         "_id": "5e0d64d8623562001700023f"
     },
     {
-        "title": "Monitoring, structured logging, events, metrics",
+        "title": "Monitoring, events, metrics",
         "content": "",
         "references": "",
         "_mby": "5e0b76e5623562001900011b",
         "_by": "5e0b76e5623562001900011b",
-        "_modified": 1577936125,
+        "_modified": 1578088235,
         "_created": 1577936125,
         "_id": "5e0d64fd62356200130000b0"
     },
@@ -1166,5 +1177,15 @@
         "_modified": 1578086010,
         "_created": 1577982489,
         "_id": "5e0e1a196235620048000089"
+    },
+    {
+        "title": "Structured logging",
+        "content": "<p>The most basic implementation of logging consists of strings of activities. Improving on that, data can be represented as a series of JSON data structures with attributes containing the message as well as additional metadata such as the datetime and the class spewing the message. Additionally, the duration of the activity could be included as metadata to allow for analysis.<\/p>",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1578088563,
+        "_created": 1578088256,
+        "_id": "5e0fb740623562004b000346"
     }
 ]
