@@ -13,8 +13,13 @@ class ConceptsController < ApplicationController
   helper_method :referenced_by
   helper_method :references
   helper_method :title
+  helper_method :top_level_concepts
 
   private
+
+  def top_level_concepts
+    concepts.select { |concept| concept.referenced_by.empty? }
+  end
 
   def concept
     concepts.detect { |concept| concept.id == params.fetch(:id) }

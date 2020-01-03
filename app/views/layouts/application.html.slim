@@ -1,0 +1,19 @@
+doctype html
+html
+head
+title My App
+meta name="viewport" content="width=device-width, initial-scale=1.0"
+= stylesheet_link_tag    "application", media: 'all'
+= csrf_meta_tags
+
+body
+  .stack
+    .header
+      = link_to 'Home', root_path
+    .page
+      .sidebar
+        - related_concepts(to: params[:id]).each do |concept|
+          .sidebar__item
+            = link_to concept.title, concept_path(concept.id)
+      .content
+        = yield

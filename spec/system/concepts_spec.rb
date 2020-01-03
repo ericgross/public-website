@@ -6,9 +6,8 @@ describe 'Concepts' do
   it 'allows navigation of concepts' do
     visit root_path
 
-    click_link 'Concepts'
     expect(page).to have_css('.concept', text: 'Quality')
-    expect(page.all('.concept').count).to be > 50
+    expect(page.all('.concept').count).to eq(5)
 
     click_link 'Quality'
     expect(page).to have_css('.title', text: 'Quality')
