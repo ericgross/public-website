@@ -12,8 +12,18 @@ body
       = link_to 'Home', root_path
     .page
       .sidebar
-        - related_concepts(to: params[:id]).each do |concept|
-          .sidebar__item
-            = link_to concept.title, concept_path(concept.id)
+        - unless related_concepts(to: params[:id]).empty?
+          h2 Refers to:
+          ul
+            - related_concepts(to: params[:id]).each do |concept|
+              .sidebar__item
+                li = link_to concept.title, concept_path(concept.id)
+
+        - unless related_from_concepts(to: params[:id]).empty?
+          h2 Referenced from:
+          ul
+            - related_from_concepts(to: params[:id]).each do |concept|
+              .sidebar__item
+                li = link_to concept.title, concept_path(concept.id)
       .content
         = yield
