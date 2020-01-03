@@ -41,8 +41,13 @@ body {
 
 .header {
   background-color: #2E2F30;
-  height: 2em;
+  height: 3em;
   color: white;
   display: flex;
   align-items: center;
+
+  a {
+    color: white;
+    padding: 0 1em 0 1em;
+  }
 }
