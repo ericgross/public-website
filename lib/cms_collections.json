@@ -1159,11 +1159,11 @@
     },
     {
         "title": "We are doctors",
-        "content": "",
+        "content": "<p>We are performing open-heart surgery every time we change production code. Just as doctors are sworn to provide information that is accurate to the best of their ability, it is incumbent on those writing production code to consider the results of our actions and to communicate with due clarity.<\/p>",
         "references": "",
         "_mby": "5e0b76e5623562001900011b",
         "_by": "5e0b76e5623562001900011b",
-        "_modified": 1577982489,
+        "_modified": 1578086010,
         "_created": 1577982489,
         "_id": "5e0e1a196235620048000089"
     }
