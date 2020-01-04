@@ -138,7 +138,7 @@
     },
     {
         "title": "Create a software product",
-        "content": "",
+        "content": "<p>Typically a software business will be created by a small-number of people who want to build a product. How does one go from zero to a publically-accessable product, than move onto growing a team to mantain and continue to extend the capabilites of the product?<\/p>\n<p>Firstly, spend some time gathering existing information that people have accumulated, either in their minds or elsewhere. Sometimes these ideas are abstract and still need to be verified. Other times, existing thoughts have been created by actually performing the activities that are going to be written into software in the past. Any assumptions that can be verified in realty before codifying them will minimize the changes needed to solve the goal at-hand.<\/p>\n<p>The goal is to distill the potential work into the smallest kernel of value because you want to minimize the amount of time before you reach confidence that you are on the right path. Any time spent working on non-essential things decreases the chances of success.<\/p>\n<p>Initial iterations follow this overall structure:<\/p>\n<ul>\n<li>Construct a jumble of all the work that you can conceive of doing, perhaps using sticky notes on a whiteboard.<\/li>\n<li>Organize the notes according to perceived value (in the short-term)<\/li>\n<li>Agree on a small amount of work to be achieved in a short amount of time (a week?)<\/li>\n<li>Do the work as quickly as possible<\/li>\n<li>Repeat as frequently as possible, given the output of the last iteration as an input to the next<\/li>\n<\/ul>\n<p>It can also be effecient to have non-developers spending time honing the path while developers create the code so that there is no delay after the code exists before it is clear what is to be worked on next.<\/p>",
         "references": [
             {
                 "_id": "5e0d6412623562001c0000fe",
@@ -248,12 +248,12 @@
             {
                 "_id": "5e0fb740623562004b000346",
                 "link": "Concepts",
-                "display": "structured logging"
+                "display": "Structured logging"
             }
         ],
         "_mby": "5e0b76e5623562001900011b",
         "_by": "5e0b76e5623562001900011b",
-        "_modified": 1578088282,
+        "_modified": 1578144325,
         "_created": 1577935870,
         "_id": "5e0d63ff623562001300027b"
     },
