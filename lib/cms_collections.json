@@ -1187,5 +1187,41 @@
         "_modified": 1578088563,
         "_created": 1578088256,
         "_id": "5e0fb740623562004b000346"
+    },
+    {
+        "title": "README",
+        "content": "<h1>Purpose<\/h1>\n<p>I want to help fellow humans who wish to create a technical business. There is content aplenty regarding the business-side of starting a business. Technical books giving guidance on writing software is obviously a big thing too. What I have discovered that leaves plenty of space for new content is in the intersection of starting a new business and writing software. I'll leave it to business people to figure out how to start an enterprise with some overarching goal or principle. Given the beginning of a conceivable path to success, the task turns to building software that meets the business' needs.<\/p>\n<h1>Audience<\/h1>\n<p>I will neither explain how to do the non-technical things required to invent a new company nor will I show how to write software in any language. So, if you have the means to both of those and you are moving on to creating the software to run a new business, this just might be of use to you.<\/p>\n<h1>Why me?<\/h1>\n<p>I've helped a few businesses create their first products and been involved in many more in a more brown-field capacity. Plenty of the businesses I was integral to failed quickly, some slowly petered-out, and the project I've been working on for a while now has provided signifigant learnings as well.<\/p>\n<p>&nbsp;<\/p>",
+        "references": "",
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1578186029,
+        "_created": 1578185468,
+        "_id": "5e1132fc623562004b000306"
+    },
+    {
+        "title": "Home",
+        "content": "<p>Welcome!<\/p>",
+        "references": [
+            {
+                "_id": "5e1132fc623562004b000306",
+                "link": "Concepts",
+                "display": "README"
+            },
+            {
+                "_id": "5e0b7b2a62356200190000dd",
+                "link": "Concepts",
+                "display": "Quality"
+            },
+            {
+                "_id": "5e0d63ff623562001300027b",
+                "link": "Concepts",
+                "display": "Create a software product"
+            }
+        ],
+        "_mby": "5e0b76e5623562001900011b",
+        "_by": "5e0b76e5623562001900011b",
+        "_modified": 1578186375,
+        "_created": 1578186073,
+        "_id": "5e113559623562004d000064"
     }
 ]
