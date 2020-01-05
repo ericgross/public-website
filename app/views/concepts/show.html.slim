@@ -15,3 +15,7 @@
         - referenced_by.each do |referred_by|
           .reference
             li = link_to referred_by.title, concept_path(referred_by.id)
+
+  - if next_concept
+    .next-concept
+      = link_to "Next: #{next_concept.title}", concept_path(next_concept.id)

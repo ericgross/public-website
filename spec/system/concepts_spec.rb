@@ -29,4 +29,11 @@ describe 'Concepts' do
     end
     expect(page).to have_css('.concept', text: 'Create a software product')
   end
+
+  it 'allows navigation via next/previous' do
+    visit root_path
+
+    click_link 'Next: README'
+    click_link 'Next: Quality'
+  end
 end

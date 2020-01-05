@@ -10,6 +10,7 @@ class ConceptsController < ApplicationController
 
   helper_method :concepts
   helper_method :content
+  helper_method :next_concept
   helper_method :referenced_by
   helper_method :references
   helper_method :title
@@ -27,5 +28,9 @@ class ConceptsController < ApplicationController
 
   def concepts
     Concepts.new.result
+  end
+
+  def next_concept
+    Concept::Next.new.result(from: concept)
   end
 end
