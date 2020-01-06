@@ -23,7 +23,13 @@ class ConceptsController < ApplicationController
   end
 
   def concept
-    concepts.detect { |concept| concept.id == params.fetch(:id) }
+    concepts.detect { |concept| concept.id == concept_id }.tap do |current_concept|
+      raise "Concept not found: #{concept_id}" unless current_concept
+    end
+  end
+
+  def concept_id
+    params.fetch(:id)
   end
 
   def concepts

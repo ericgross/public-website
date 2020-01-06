@@ -3,4 +3,4 @@
 set -eux
 
 docker exec -it 0723268cf648e34a2c22ede64d4ac50e0d59493bb5f0e1c902c16ac3c3899d4e bash -c 'tmp_dir=$(mktemp -d /tmp/cockpit-export-XXXXXX) && /var/www/html/cp export/collections --target $tmp_dir > /dev/null && cat ${tmp_dir}/collections/Concepts.json' > lib/cms_collections.json
-docker exec -it 0723268cf648e34a2c22ede64d4ac50e0d59493bb5f0e1c902c16ac3c3899d4e bash -c 'tmp_dir=$(mktemp -d /tmp/cockpit-export-XXXXXX) && /var/www/html/cp export/collections --target $tmp_dir > /dev/null && cat ${tmp_dir}/collections/TestConcepts.json' > lib/test/cms_collections.json
+docker exec -it 0723268cf648e34a2c22ede64d4ac50e0d59493bb5f0e1c902c16ac3c3899d4e bash -c 'tmp_dir=$(mktemp -d /tmp/cockpit-export-XXXXXX) && /var/www/html/cp export/collections --target $tmp_dir > /dev/null && cat ${tmp_dir}/collections/TestConcepts.json' > spec/fixtures/cms_collections.json

@@ -1,11 +1,11 @@
-module Concept
+class Concept
   class Next
     def result(from:)
       @from = from
 
       return first_reference if first_reference
 
-      from.referenced_by.first.references.second
+      # from.referenced_by.first.references.first
     end
 
     private

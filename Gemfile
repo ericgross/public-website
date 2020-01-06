@@ -26,6 +26,8 @@ gem 'pry-stack_explorer'
 gem 'high_voltage'
 gem 'slim-rails'
 
+gem 'memery'
+
 group :development, :test do
   gem 'rspec-rails', require: false
 end
